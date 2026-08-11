@@ -1,0 +1,15 @@
+# Minimal pip deps for PROBE (after creating the conda env with Python 3.11).
+# Install CUDA PyTorch first, then this file:
+#
+#   pip install torch==2.6.0+cu124 --index-url https://download.pytorch.org/whl/cu124
+#   pip install -r requirements.txt
+#
+numpy==1.26.4
+pandas==2.3.1
+scipy==1.12.0
+scikit-learn==1.7.0
+matplotlib
+seaborn
+pyyaml
+tqdm
+rapidfuzz

@@ -1,0 +1,21 @@
+# Sequence generation config
+generation:
+  init_type: "freq_prior"  # topk | random | freq_prior
+  generate_dir: "experiments/generation"
+  model_name: ["cnn"]
+  ckpt_dir: null
+  num_sequences: 32
+  top_k: 20
+  # reference_sequences: null
+  seq_length: null  # null = infer from reference sequences
+  skip_t_threshold: 0.00
+  score_temperature: 1.0
+
+grad:
+  num_iterations: 50
+  refine_learning_rate: 0.5
+  temperature: 1.0
+  alpha: 0.1
+  beta: 0.05
+  improve_patience: 10
+  freeze_patience: 10

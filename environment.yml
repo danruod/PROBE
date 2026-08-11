@@ -1,0 +1,30 @@
+# Minimal conda environment for PROBE
+#
+#   conda env create -f environment.yml
+#   conda activate probe
+#
+# Or manually:
+#   conda create -n probe python=3.11 pip -y
+#   conda activate probe
+#   pip install torch==2.6.0+cu124 --index-url https://download.pytorch.org/whl/cu124
+#   pip install -r requirements.txt
+#
+name: probe
+channels:
+  - defaults
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+      - --index-url https://download.pytorch.org/whl/cu124
+      - --extra-index-url https://pypi.org/simple
+      - torch==2.6.0+cu124
+      - numpy==1.26.4
+      - pandas==2.3.1
+      - scipy==1.12.0
+      - scikit-learn==1.7.0
+      - matplotlib
+      - seaborn
+      - pyyaml
+      - tqdm
+      - rapidfuzz

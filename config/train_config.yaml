@@ -1,0 +1,29 @@
+# PROBE model training config
+training:
+  output_dir: "./experiments/model"
+  random_state: 42
+  local_pairing: true
+  mode: "pairwise"
+  resume: true
+  resume_path: null
+  skip_training: false
+  use_multi_gpu: false
+
+training_params:
+  train_batch_size: 128
+  val_batch_size: 256
+  test_batch_size: 512
+  num_workers: 2
+  val_size: 0.1
+  max_epochs: 5
+  learning_rate: 1e-3
+  weight_decay: 0.001
+  patience: 5
+  warmup_epochs: 1
+  scheduler_type: "plateau"
+  grad_clip: 1.0
+
+model:
+  models: ['cnn', 'transformer']
+  hidden_dim: 128
+  dropout: 0.1

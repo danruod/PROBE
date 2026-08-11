@@ -1,0 +1,13 @@
+# Data preprocessing config (used by scripts/data.py)
+# Prefer --data_path on the CLI; data_name defaults to the CSV stem.
+data:
+  # data_path: "./notebooks/demo.csv"
+  # data_name: null
+  data_output_dir: "./dataset"
+  random_state: 42
+  val_size: 0.1
+  n_splits: 3
+  split_method: "kmer"
+  max_n_seqs: 5
+  vocab_size: 4
+  log_transform: false

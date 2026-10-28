@@ -41,7 +41,7 @@ PROBE/
 └── run.sh                    # optional one-liner helper
 ```
 
-Scripts create local runtime folders (`dataset/`, `checkpoints/`, `experiments/`, `logs/`). Do not commit those artifacts when publishing.
+Scripts create local runtime folders (`dataset/`, `checkpoints/`, `experiments/`, `logs/`). 
 
 Optional per-dataset overrides: `config/<data_name>/{data,train,generate}_config.yaml`.
 

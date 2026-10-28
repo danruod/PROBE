@@ -1,6 +1,6 @@
 # PROBE
 
-PROBE learns a pairwise ranking model over DNA aptamer sequences and optimizes new candidates with gradient-based refinement against an ensemble of cross-validation folds.
+Here we introduce PROBE (Preference-graph Ranking and Optimization for Binder Engineering), a generative AI framework that learns from noisy experimental evolution data. By representing neighboring sequences as a comparison graph and learning a shared ordinal potential that integrates local relations into a globally queryable ranking coordinate, PROBE reduces reliance on the absolute abundance scale and couples this assay-derived coordinate to uncertainty-aware continuous gradient optimization. 
 
 
 ## Google Colab
